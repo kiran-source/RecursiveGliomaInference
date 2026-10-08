@@ -1,0 +1,4 @@
+log_evidence,-1.393118222336e+07
+effective_dimension,14.253
+phi_map,7.390620e+02
+prior_norm_sq,2.894399e+07

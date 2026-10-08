@@ -1,63 +1,105 @@
-# Bayesian Inference for Mechanically-Coupled Hyper-elastic Tumor Growth
-Recursive Bayesian inference and model selection for mechanically coupled tumor growth models using longitudinal MRI data.
+# Bayesian Inverse Biophysical Modeling for Glioblastoma Growth
 
-## Project Overview
+[![FEniCS](https://img.shields.io/badge/FEniCS-2019.1.0-blue.svg)](https://fenicsproject.org/)
+[![hIPPYlib](https://img.shields.io/badge/hIPPYlib-3.0.0-green.svg)](https://hippylib.github.io/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://hub.docker.com/r/hippylib/fenics)
+[![Dataset](https://img.shields.io/badge/Cohort-10%20LUMIERE%20Patients%20%2B%20Rat%20Baseline-orange.svg)](#datasets)
 
-This project develops and calibrates a **mechanically coupled reaction–diffusion (Mech-RD)** tumor growth model using **Bayesian inference**. The framework integrates tumor biology with tissue mechanics to better capture realistic tumor evolution.
+A PDE-constrained Bayesian inverse framework for simulating, calibrating, and forecasting patient-specific **Glioblastoma Multiforme (GBM)** progression and tissue deformation using longitudinal MRI scans.
 
-MRI tumor data from different rats are used to infer key parameters:
-
-1. **E** (Elastic Modulus)
-2. **D** (Diffusivity)
-3. **G** (Proliferation Rate)
-
-Model performance is evaluated using:
-
-* **DICE coefficient** (shape overlap)
-* **Normalized Tumor Area (NTA)**
+This repository couples:
+1. **Reaction-Diffusion Dynamics**: Heterogeneous tumor motility ($D$) and logistic proliferation ($G$).
+2. **Nonlinear Hyperelastic Mechanics**: Brain tissue deformation governed by Neo-Hookean strain energy ($E$) under tumor mass-effect swelling.
+3. **Bayesian Inversion & Uncertainty Quantification**: Adjoint-based Inexact Newton-CG optimization, Vector Bi-Laplacian spatial priors, and Laplace approximation via randomized SVD.
 
 ---
 
+## 🔬 Core Features
 
-## Code Dependencies
+* **Biomechanical First Principles**: Accounts for tumor mass effect, compressive mechanical stress, and midline shift.
+* **One-Scan-Ahead Forecasting**: Calibrated on longitudinal scans ($t=2, 4, 5, 6$) to predict future, unseen scan morphology at $t=9$ (**Forecast DICE = 0.9102**).
+* **Multi-Subject Cohort**:
+  * **Preclinical Rat Baseline**: `W05` rat glioma dataset.
+  * **Human Clinical Cohort**: 10 patients (`Patient_001` through `Patient_010`) constructed from the **LUMIERE** longitudinal MRI dataset.
+* **Complete Reproducibility**: Automated Docker runners (`run.ps1` / `run_cohort.ps1`) require zero local FEniCS compilation.
 
-To execute these scripts, your environment must include the following dependencies:
-* **FEniCS** A popular open-source computing platform designed for solving partial differential equations (PDEs) using the finite element method (FEM). Its standout feature is allowing researchers to write mathematical models in a high-level language that closely resembles standard mathematical notation, which the software then automatically translates into highly optimized, efficient code to simulate physical systems.
-* **hIPPYlib**: An advanced mathematical framework built directly on top of FEniCS. hIPPYlib is dedicated to working backward (inverse problems). It provides the  optimization and statistical tools required to infer unknown parameters from observational data, and quantify the uncertainty of those estimates. It computes gradient and Hessian in an automatic manner, which can be utilized to solve PDE-constrained Bayesian inverse problems.
+---
 
-## How to Run
-To run the code, execute the main script from your command line. The script accepts optional arguments to configure the noise variance, tissue density, and the number of posterior evaluation samples.
-```bash
-python Rat-3_hyper.py --sigma 0.035 --rhoGM 800 --nsamples 500
-```
+## 📊 Summary of Results (Patient 1)
+
+| Metric | Result | Physical / Clinical Meaning |
+| :--- | :--- | :--- |
+| **Forecast DICE ($t=9$)** | **0.9102** | **91% volumetric overlap** on unseen future scan. |
+| **Model NTA vs. True NTA ($t=9$)** | **0.2439** vs. **0.2454** | Error $< 0.6\%$; captures accurate mass expansion. |
+| **Newton-CG Convergence** | **9 iterations** | Objective misfit dropped from 2,717 to 780. |
+| **Effective Parameter Dimension** | **14.253** | Dominant directions informed by patient imaging. |
+| **Bayesian Log-Evidence** | **$-1.393 \times 10^7$** | Metric for statistical model comparison. |
+
+---
 
 ## 📁 Repository Structure
 
 ```
-RecursiveGliomaInference/
-│
-├── BayesianInference/        → Core modeling, and Inference
-├── W05_data/2D/                 → Rat data and mesh
+.
+├── BayesianInference/
+│   ├── patient_hyper.py           # Master solver for multi-patient cohort
+│   ├── Rat-3_hyper.py             # Preclinical rat baseline solver
+│   ├── mech_hyper.py              # Neo-Hookean hyperelastic constitutive laws
+│   ├── td_mechHyp.py              # Coupled PDE forward & adjoint engine
+│   └── results/
+│       └── Patient_001/           # Verified Patient 1 outputs (DICE, NTA, XDMF)
+├── mri_data/                      # 10-Patient Human Cohort (Patient_001 - 010)
+│   └── Patient_XXX/2D/            # Axial meshes (.xml) and observations (.h5)
+├── W05_data/2D/                   # Rat baseline data & mesh
+├── hippylib/                      # hIPPYlib library with upstream prior bugfix
+├── build_lumiere_cohort.py        # Cohort builder from LUMIERE metadata
+├── convert_state_to_paraview.py   # XDMF adapter for ParaView 6+
+├── plot_metrics.py                # Publication-quality metrics plotter
+├── run.ps1 / run.sh               # Baseline rat runner
+└── run_cohort.ps1 / run_cohort.sh # Clinical cohort runner
 ```
 
 ---
 
-## 🔍 Folder Descriptions
+## 🚀 Quickstart
 
-### `BayesianInference`
+### Prerequisites
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 
-Contains the complete computational framework:
-
-* Forward models (Mech-RD basically the Hyperelastic setup)
-* Bayesian inference (MAP, LA)
-
-### Data
-
-The folder `W05_data/2D/` contains a murine glioma MRI dataset used for Bayesian inference. The data include MRI-derived tumor volume fraction fields at multiple imaging time points and the finite-element mesh used for the reference-domain computation
-
-📌 Detailed instructions and module descriptions are provided in:
-
+### 1. Run the Human Patient Cohort (Windows PowerShell)
+Run an individual patient:
+```powershell
+.\run_cohort.ps1 -patient Patient_001 -max_iter 10 -nsamples 100
 ```
-BayesianInference/README.md
-W05_data/2D/READNE.md
+Or run all patients sequentially:
+```powershell
+.\run_cohort.ps1 -all -max_iter 7 -nsamples 100
 ```
+
+### 2. Run the Original Rat Baseline
+```powershell
+.\run.ps1
+```
+
+---
+
+## 📈 Visualizing Outputs
+
+### Option A: Instant PNG Summary
+View generated metrics without external tools:
+* Open `BayesianInference/results/Patient_001/metrics_summary.png` to inspect the DICE curve, NTA comparison, and volume growth.
+
+### Option B: 2D Interactive Spatiotemporal Fields in ParaView
+1. Open **[ParaView](https://www.paraview.org/)**.
+2. Open `BayesianInference/state_trajectory_paraview.xdmf` (or `results/Patient_001/state_trajectory_paraview.xdmf`).
+3. Select **XDMF Reader** $\rightarrow$ click **Apply**.
+4. Change coloring dropdown from `Solid Color` to **`u`** (tumor concentration).
+5. Click **Play ($\blacktriangleright$)** to animate tumor invasion and brain deformation up to Day 9 forecast!
+6. Open `MAP.xdmf` to view the estimated spatial maps of tissue stiffness $E$, diffusion $D$, and proliferation $G$.
+
+---
+
+## 📚 Citation & Acknowledgments
+Based on:
+* *Recursive Bayesian inference and model selection for mechanically coupled tumor growth models* (PCELab / hIPPYlib).
+* Clinical metadata derived from the **LUMIERE** dataset (*Longitudinal Glioblastoma MRI Dataset with Expert Segmentations*).

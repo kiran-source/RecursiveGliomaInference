@@ -1,0 +1,617 @@
+Patient,Date,LessThan3Months,NonMeasurableLesions,"Rating (according to RANO, PD: Progressive disease, SD: Stable disease, PR: Partial response, CR: Complete response, Pre-Op: Pre-Operative, Post-Op: Post-Operative)","Rating rationale (CRET: complete resection of the enhancing tumor, PRET: partial resection of the enhancing tumor, T2-Progr.: T2-Progression, L: Lesion)"
+Patient-001,week-000-1,,,Pre-Op,
+Patient-001,week-000-2,,,Post-Op,CRET
+Patient-001,week-044,,,SD,
+Patient-001,week-056,,x,PD,"Target L.: 1 12mm x 13mm, new non-target L."
+Patient-002,week-000,,,Pre-Op,
+Patient-002,week-003,,,Post-Op,CRET
+Patient-002,week-021,,,SD,None
+Patient-002,week-037,,,PD,Target L.: 13mm x 26mm
+Patient-002,week-040-2,,,Post-Op,None
+Patient-002,week-047,,,PD,Target L.: 28mm x 44mm after re-resection
+Patient-003,week-000-1,,,Pre-Op,
+Patient-003,week-000-2,,,Post-Op,CRET
+Patient-003,week-014,x,,SD,"less than 3 months, non-target L."
+Patient-003,week-027,,x,PD,New non-measurable L.
+Patient-003,week-038,,x,PD,"Non-measurable L., Target L.: 2, 11mm x 11mm,  21mm x 18mm"
+Patient-004,week-000-1,,,Pre-Op,
+Patient-004,week-000-2,,,Post-Op,CRET
+Patient-004,week-020,,,PD,"T2-Progr., new non-target L.: 1"
+Patient-004,week-038,,,PD,"T2-Progr., Target L.: 24mm x 26mm, Non-Target L.: 1"
+Patient-004,week-041,,,Post-Op,CRET
+Patient-004,week-057,,,PD,"New target L.: 17mm x 24mm, new non-Target L.: 1"
+Patient-004,week-071,,,PR,"Regressing target L. 12mm x 20mm, regressing non-target L."
+Patient-004,week-086,,,PD,"Progressing target L.: 24mm x 28mm, new non-target L."
+Patient-005,week-000-1,,,Pre-Op,
+Patient-005,week-000-2,,,Post-Op,PRET
+Patient-005,week-015,,,SD,Progression probably within the irradiated area
+Patient-006,week-000,,,Pre-Op,
+Patient-006,week-001,,,Post-Op,CRET
+Patient-006,week-015,,,SD,
+Patient-006,week-027,,,SD,
+Patient-006,week-039,,,SD,
+Patient-006,week-053,,,SD,
+Patient-006,week-067,,,SD,
+Patient-006,week-083,,,SD,
+Patient-006,week-097,,,PD,New non-Target L.: 1
+Patient-006,week-112,,,PD,Non-Target L.: 11mm x 22mm
+Patient-006,week-114,,,Post-Op,CRET
+Patient-006,week-121,,,SD,None
+Patient-006,week-131,,,PD,Non-Target L.: 1
+Patient-006,week-135,,,PD,Non-Target L.: 1
+Patient-007,week-000,,,Pre-Op,
+Patient-007,week-001,,,Post-Op,CRET
+Patient-007,week-015,,,PD,T2-Progr.
+Patient-007,week-028,,,PD,T2-Progr.
+Patient-007,week-041,,x,PD,Non-measurable L.
+Patient-007,week-055,,,PD,"Target L.: 1, 10mm x 14mm"
+Patient-007,week-064,,,PD,"Target L.: 1, 16mm x 19mm"
+Patient-007,week-075,,,PD,"Target L.: 2, 15mm x 24mm, new TL 22mm x 46mm"
+Patient-007,week-089,,,PD,"Target L.: 2, 16mm x 28mm, 27mm x 59mm"
+Patient-007,week-105,,,PD,"Target L.: 2, 30mm x 54mm, 22mm x 53mm"
+Patient-008,week-000,,,Pre-Op,
+Patient-008,week-002,,,Post-Op,PRET
+Patient-008,week-017,,,PD,New non-Target L.
+Patient-008,week-066,,,PD,"T2-Progr., progressing non-target L."
+Patient-008,week-085,,,PD,"T2-Progr.,new non-target L."
+Patient-009,week-000-1,,,Pre-Op,
+Patient-009,week-000-2,,,Post-Op,PRET
+Patient-009,week-014,x,,SD,"Less than 3 months, target L. 11.5mm x 19.5mm, 13mm x 17mm, T2-Progr., new non-measurable non-target L."
+Patient-009,week-015,,,Post-Op,CRET
+Patient-009,week-024,,,CR,None
+Patient-009,week-026,,,PD,"T2-Progr., new non-target L."
+Patient-009,week-066,,,PD,"T2-Progr., new non-target L."
+Patient-010,week-000,,,Pre-Op,
+Patient-010,week-001,,,Post-Op,PRET (ventral)
+Patient-010,week-001,,,Post-Op,PRET
+Patient-010,week-002,,,Post-Op,PRET (caudodorsal)
+Patient-010,week-015,x,,SD,"Less than 3 months, new target L. 11.5mm x 11mm, new non-target L."
+Patient-011,week-000,,,Pre-Op,
+Patient-011,week-003,,,Post-Op,CRET
+Patient-011,week-021,x,,SD,"Less than 3 months, target L. 14mm x 11mm, new non-target L., T2-Progr."
+Patient-011,week-024,,,Post-Op,PRET
+Patient-011,week-028,,,PD,"T2-Progr., target L. 24.5mm x 19.5mm, non-target L."
+Patient-012,week-000-1,,,Pre-Op,
+Patient-012,week-000-2,,,Post-Op,PRET
+Patient-012,week-016,x,,SD,"Less than 3 months, new target L. 16mm x 14mm, new non-target L., T2-Progr. In the high-dose field "
+Patient-012,week-022,,,Post-Op,CRET
+Patient-012,week-048,,,PD,T2-Progr.
+Patient-012,week-073,,,PD,"T2-Progr., new non-target L."
+Patient-012,week-084,,,PD,"T2-Progr., target L. 23mm x 18mm"
+Patient-013,week-000,,,Pre-Op,
+Patient-013,week-002,,,Post-Op,CRET
+Patient-013,week-017,,,SD,New non-Target L. in the high dose field
+Patient-013,week-030,,,PD,Target L. 13mm x 12mm
+Patient-014,week-000,,,Pre-Op,
+Patient-014,week-001,,,Post-Op,CRET
+Patient-014,week-012,,,SD,
+Patient-015,week-000-1,,,Pre-Op,
+Patient-015,week-000-2,,,Post-Op,CRET
+Patient-015,week-021,,,CR,None
+Patient-015,week-037,,,CR,None
+Patient-015,week-056,,,PD,T2-Progr.
+Patient-015,week-078,,,PD,"T2-Progr., new non-target L."
+Patient-015,week-083,,,PD,"T2-Progr., new non-target L."
+Patient-015,week-084,,,Post-Op,CRET
+Patient-015,week-099,,,PD,"T2-Progr., new non-target L."
+Patient-015,week-111,,,PD,"T2-Progr., new non-target L."
+Patient-015,week-126,,,PD,"T2-Progr., new non-target L."
+Patient-015,week-140,,,PD,"T2-Progr., new non-target L., new target L. 19mm x 17.5mm"
+Patient-015,week-145,,,PD,"T2-Progr., new non-target L., target L. 35.5mm x 36mm"
+Patient-015,week-146,,,Post-Op,PRET
+Patient-016,week-000-1,,,Pre-Op,
+Patient-016,week-000-2,,,Post-Op,CRET
+Patient-017,week-000,,,Pre-Op,
+Patient-017,week-001,,,Post-Op,PRET
+Patient-017,week-016,x,,SD,"less than 3 months, new target L. 17mm x 12mm, new non-target L., T2-Progr. in the high-dose field"
+Patient-017,week-035,,x,PD,"T2-Progr, target L. 31mm x 17mm, new non-measurable L."
+Patient-018,week-000,,,Pre-Op,
+Patient-018,week-003,,,Post-Op,CRET
+Patient-018,week-017,,,SD,New non-target L. within the irradiated area
+Patient-018,week-034,,,PD,New target L. 13mm x 27mm
+Patient-018,week-063,,,CR,None
+Patient-018,week-082,,,CR,None
+Patient-019,week-000,,,Pre-Op,
+Patient-019,week-005,,,Post-Op,PRET
+Patient-019,week-015,x,,SD,"Less than 3 months, target L. 60mm x 26mm, T2-Progr. in the high-dose feld"
+Patient-019,week-022,x,,SD,"Less than 3 months, target L. 71mm x 41mm, T2-Progr."
+Patient-019,week-031,x,,PD,Target L. 57mm x 33mm
+Patient-019,week-055,,,PD,"T2-Progr, target L. 61mm x 35mm"
+Patient-019,week-061,,,PD,Target L.: 57mm x 31mm
+Patient-019,week-075,,,PR,"T2-Progr. stable wrt. Previous, target L. 45mm x 17mm (64% wrt. 20100824)"
+Patient-019,week-090,,,PR,"Target L. 23mm x 13mm, T2-Progr. Stable to previous"
+Patient-019,week-117,,,PR,"T2-Regression, target L. to non-measurable L."
+Patient-019,week-137,,,PR,"T2-Progr., new measurable target L. 55mm x 32mm"
+Patient-019,week-138,,,PD,"T2-Progr., target L. 51mm x 22mm"
+Patient-020,week-000,,,Post-Op,CRET
+Patient-020,week-000-1,,,Pre-Op,
+Patient-021,week-000-1,,,Pre-Op,
+Patient-021,week-000-2,,,Post-Op,CRET
+Patient-021,week-022,,,PD,dural recurrence despite within 3 months of radiochemotherapy
+Patient-021,week-035,,,PR,with Temodal and Avastin
+Patient-022,week-000,,,Pre-Op,
+Patient-022,week-001,,,Post-Op,CRET
+Patient-022,week-037,,,PD,"T2-Progr., target L. 34mm x 38mm, 32mm x 24mm, 26mm x 15mm, non-target L.: 1"
+Patient-022,week-039,,,Post-Op,PRET
+Patient-022,week-045,,x,PD,"New non-measurable non-target L., example of a hypoperfusion of new lesions with Avastin, wrongly classified as radiation necrosis"
+Patient-022,week-053,,x,PD,"T2-Progr., new target L. 18 mmx 25mm, 20mm x 25.5mm, new non-measurable non-target L."
+Patient-023,week-000,,,Pre-Op,
+Patient-023,week-001,,,Post-Op,CRET
+Patient-023,week-024,,,SD,None
+Patient-023,week-039,,,SD,None
+Patient-023,week-046,,,PD,Non-Target L.: 1
+Patient-023,week-059,,,PD,Non-Target L.: 1
+Patient-023,week-070,,,CR,None
+Patient-023,week-084,,,CR,None
+Patient-023,week-097,,,PD,Target L.: 18mm x 25mm
+Patient-023,week-099,,,Post-Op,CRET
+Patient-023,week-111,,,PD,"Target L.: 12mm x 35mm, non-target L.:1"
+Patient-023,week-115,,,PD,"Target L.: 19mm x 38mm, non-target L.:1"
+Patient-023,week-116,,,Post-Op,PRET
+Patient-023,week-127,,,PD,Target L.: 42mm x 84mm
+Patient-024,week-000,,,Pre-Op,
+Patient-024,week-001,,,Post-Op,CRET
+Patient-024,week-015,,,PD,T2-Progr.
+Patient-024,week-031,,,PD,T2-Progr.
+Patient-024,week-043,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-024,week-060,,,PD,"T2-Progr., target L. 24mm x 46mm"
+Patient-025,week-000,,,Pre-Op,
+Patient-025,week-002,,,Post-Op,PRET
+Patient-025,week-019,,,SD,None
+Patient-025,week-030,,,SD,None
+Patient-025,week-043,,x,PD,"T2-Progr., Non-target L.: 1"
+Patient-025,week-055,,x,PD,"T2-Progr., Target L.: 1, Non-Target L.: 1, 19mm x 20mm"
+Patient-025,week-070,,x,PD,"T2-Progr., Target L.: 1, Non-Target L.: 2, 43mm x 29mm, 13mm x 16mm"
+Patient-026,week-000,,,Pre-Op,
+Patient-026,week-002,,,Post-Op,CRET
+Patient-026,week-069,,,None,None
+Patient-027,week-000-1,,,Pre-Op,
+Patient-027,week-000-2,,,Post-Op,CRET
+Patient-027,week-014,,,PD,Target L.: 11mm x 14mm
+Patient-028,week-000-1,,,Pre-Op,
+Patient-028,week-000-2,,,Post-Op ,CRET
+Patient-028,week-015,,x,PD,Non-measurable L.
+Patient-028,week-030,,x,PD,Non-measurable L.
+Patient-028,week-038,,,PD,"Target L.: 1, 16mm x 22mm"
+Patient-028,week-046,,,PD,"Target L.: 1, 26mm x 27mm"
+Patient-029,week-000-1,,,Pre-Op,
+Patient-029,week-000-2,,,Post-Op,PRET
+Patient-029,week-010,,,PR,None
+Patient-029,week-022,,,PR,None
+Patient-029,week-033,,,CR,None
+Patient-029,week-045,,,CR,None
+Patient-029,week-059,,,CR,None
+Patient-029,week-100,,,CR,None
+Patient-029,week-112,,,CR,None
+Patient-029,week-152,,,CR,None
+Patient-029,week-165,,,CR,None
+Patient-029,week-207,,,CR,None
+Patient-029,week-223,,,PD,New target L.: 13mm x 14mm
+Patient-029,week-240,,,PD,"Target L.: 17mm x 19mm, new 16mm x 18mm and 11mm x 22mm"
+Patient-030,week-000,,,Pre-Op,
+Patient-030,week-001,,,Post-Op,CRET
+Patient-030,week-017,,,SD,None
+Patient-030,week-025,,,SD,None
+Patient-030,week-041,,,PD,T2-Progr.
+Patient-030,week-052,,,PD,"T2-Progr., new non-target L., target L. 17mm x 16mm"
+Patient-030,week-067,,,PR,with Avastin
+Patient-030,week-085,,x,PD,"T2-Progr., new non-measurable L., target L. 33mm x 24mm, 41mm x 19mm"
+Patient-031,week-000,,,Pre-Op,
+Patient-031,week-002,,,Post-Op,CRET
+Patient-031,week-015,x,,SD,"less than 3 months, new target L. 11mm x 15.5mm, new non-target L., T2-Progr."
+Patient-031,week-018,,,Post-Op,CRET
+Patient-031,week-032,,,CR,None
+Patient-031,week-046,,,CR,None
+Patient-031,week-059,,,CR,None
+Patient-031,week-074,,,CR,None
+Patient-031,week-087,,,CR,None
+Patient-031,week-105,,,CR,None
+Patient-031,week-123,,,CR,None
+Patient-031,week-142,,,PD,New non-Target L.
+Patient-031,week-148,,,Post-Op,PRET
+Patient-031,week-151,,,PD,T2-Progr.
+Patient-031,week-165,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-031,week-170,,,Post-Op,CRET
+Patient-031,week-184,,,PD,"T2-Progr., new non-Target L.: 1, target L.: 34.5mm x 21mm, 12mm x 25mm, 18mm x 10mm, 16mm x 12.5mm"
+Patient-031,week-190,,,PD,"T2-Progr., target L. 49mm x 30mm, 32mm x 50mm, 31mm x 38mm, non-target L.: 1    "
+Patient-032,week-000-1,,,Pre-Op,
+Patient-032,week-000-2,,,Post-Op,CRET
+Patient-032,week-013,,,CR,None
+Patient-032,week-027,x,,CR,"less than 3 months, T2-Progr."
+Patient-032,week-040,x,,CR,"T2-Progr., new non-target L."
+Patient-032,week-044,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-032,week-046,,,Post-Op,CRET
+Patient-032,week-055,,x,PD,New non-measurable non-target L.
+Patient-032,week-067,,x,PD,"T2-Progr., new non-measurable non-target L."
+Patient-032,week-069,,,Post-Op,CRET
+Patient-032,week-075,,,PD,"T2-Progr., new non-target L."
+Patient-032,week-085,,,CR,None
+Patient-032,week-096,,,PD,"T2-Progr., non-target L."
+Patient-033,week-000,,,Pre-Op,
+Patient-033,week-002,,,Post-Op,PRET
+Patient-033,week-006,x,,SD,"less than 3 months, target L.: 14mm x 13mm dorsal to the resection cavity in the high-dose field"
+Patient-033,week-011,,x,PD,"T2-Progr., 1 target L.: 1, new non-measurable L."
+Patient-033,week-031,,x,PD,"Target L.: 1, new non-measurable L. dorsomedial resection cavity"
+Patient-033,week-049,,,PD,T2-Progr. Centrum semiovale
+Patient-033,week-063,,,PD,T2-Progr.
+Patient-033,week-076,,x,PD,"T2-Progr., increase >25% of both non-measurable L."
+Patient-033,week-084,,,PD,"T2-Progr., target L.: 23mm x 15mm"
+Patient-033,week-088,,,PD,"T2-Progr., target L.: 26mm x 19mm"
+Patient-034,week-000-1,,,Pre-Op,
+Patient-034,week-000-2,,,Post-Op,CRET
+Patient-034,week-014,,,SD,None
+Patient-034,week-028,,,PD,"T2-Progr., Non-Target L.: 1, new non-target L."
+Patient-034,week-040,,x,PD,"T2-Progr., Target L.: 12mm x 11mm, no non-target L."
+Patient-034,week-044,,,Post-Op,PRET
+Patient-034,week-058,,,PD,T2-Progr.
+Patient-035,week-000-1,,,Pre-Op,
+Patient-035,week-000-2,,,Post-Op,CRET
+Patient-035,week-008,,,SD,Progression probably within the irradiated area
+Patient-035,week-019,,,SD,Progression probably within the irradiated area
+Patient-035,week-024,,,PD,New non-Target L.
+Patient-035,week-036,,,PD,New target L.: 21mm x 33mm
+Patient-035,week-050,,,PD,Progressing target L.: 1 (no measurement available)
+Patient-036,week-000,,,Pre-Op,
+Patient-036,week-002,,,Post-Op,CRET
+Patient-036,week-005,,,SD,
+Patient-037,week-000-1,,,Pre-Op,
+Patient-037,week-000-2,,,Post-Op,PRET
+Patient-037,week-002,x,,SD,"less than 3 months, new non-target lesion"
+Patient-037,week-015,x,,SD,"less than 3 months, new target L. 12mm x 12mm, new non-target L., T2-Progr."
+Patient-037,week-025,x,,SD,"New non-target L., T2-Progr."
+Patient-037,week-029,,,PD,"T2-Progr., Non-Target L.: 3"
+Patient-037,week-037,,,PD,"T2-Progr., target L. 10mm x 12mm, Non-target L.: 3"
+Patient-037,week-049,,,PD,"T2-Progr., no contrast-agent / T1w-post-contrast available"
+Patient-038,week-000,,,Pre-Op,
+Patient-038,week-002,,,Post-Op,CRET
+Patient-038,week-023,,,PD,"T2-Progr., non-target L.: 1, target L.: 10.5mm x 10.5mm"
+Patient-039,week-000-1,,,Pre-Op,
+Patient-039,week-000-2,,,Post-Op,CRET
+Patient-039,week-017,x,x,SD,"less than 3 months, new non-measurable non-target L."
+Patient-039,week-044,,,PD,"T2-Progr., target L. 33mm x 25.5mm, 26mm x 30mm, non-target L."
+Patient-040,week-000,,,Pre-Op,
+Patient-040,week-001,,,Post-Op,CRET
+Patient-040,week-015,,,SD,Progression probably within the irradiated area
+Patient-040,week-028,,,PD,Target L.: 12mm x 18mm
+Patient-041,week-000,,,Pre-Op,
+Patient-041,week-002,,,Post-Op,CRET
+Patient-041,week-020,x,,SD,"Less than 3 months, 3 new non-target lesions"
+Patient-041,week-038,,,PD,"T2-Progr., Non-Target L.: 3, non-target lesion regressing in size"
+Patient-041,week-051,,,PD,"T2-Progr., Non-Target L.: 3, no contrast-agent administered, imaging not completed"
+Patient-042,week-000-1,,,Pre-Op,
+Patient-042,week-000-2,,,Post-Op,CRET
+Patient-042,week-004,,,SD,
+Patient-042,week-010,,,SD,
+Patient-042,week-010,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-042,week-022,,,SD,
+Patient-042,week-035,,,SD,
+Patient-042,week-055,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-042,week-060,,,PD,"T2-Progr., Non-Target L.: 1"
+Patient-042,week-061-1,,,PD,"T2-Progr., Non-Target L.: 1, Target L: 1, 12mm x 15mm"
+Patient-042,week-061-2,,,Post-Op,PRET
+Patient-042,week-078,,x,PD,"T2-Progr., Target L.: 2, 38mm x 22mm, 23mm x 15mm, new non-measurable non-target L."
+Patient-042,week-081,,x,PD,"T2-Progr., Target L.: 4, 49mm x 25mm, 30mm x 20mm, 21mm x 14mm, 28mm x 28mm,  new non-measurable non-target L."
+Patient-042,week-082,,,Post-Op,PRET
+Patient-043,week-000,,,Pre-Op,
+Patient-043,week-018,,,SD,
+Patient-043,week-030,,,SD,
+Patient-043,week-041,,,SD,
+Patient-043,week-053,,,SD,
+Patient-043,week-067,,,PD,New non-Target L.: 1
+Patient-043,week-070,,,Post-Op,"CRET, new non-target L."
+Patient-043,week-084,,,PD,Non-Target L.: 1 (new)
+Patient-043,week-098,,,PD,"T2-Progr., Target L.: 1, 16mm x 13mm, no non-target L."
+Patient-043,week-106,,,Post-Op,CRET
+Patient-043,week-106,,,PD,"T2-Progr., Target L.: 2, 16mm x 16mm, new target L. 18mm x 28mm, Non-Target L.: 1"
+Patient-043,week-116,,,PD,"T2-Progr., Target L.: 2, 33mm x 41mm, 30mm x 27mm, Non-Target L.: 2"
+Patient-044,week-000-1,,,Pre-Op,
+Patient-044,week-000-2,,,Post-Op,CRET
+Patient-045,week-000-1,,,Pre-Op,
+Patient-045,week-000-2,,,Post-Op,CRET
+Patient-045,week-017,,,SD,Progression probably within the irradiated area
+Patient-045,week-028,,,PD,Non-Target L.: 1
+Patient-046,week-000,,,Pre-Op,
+Patient-046,week-001,,,Post-Op,PRET
+Patient-046,week-016,,,SD,Progression probably within the irradiated area
+Patient-046,week-064,,,PD,Target L.: 25mm x 41mm
+Patient-047,week-000-1,,,Pre-Op,
+Patient-047,week-000-2,,,Post-Op,CRET
+Patient-048,week-000-1,,,Pre-Op,
+Patient-048,week-000-2,,,Post-Op,CRET
+Patient-048,week-013,,,SD,
+Patient-048,week-023,,,CR,
+Patient-048,week-045,,x,PD,"T2-Progr., new non-measurable L."
+Patient-048,week-049,,x,PD,"T2-Progr., Target L.: 29mm x 21mm, 30mm x 17mm, 11mm x 10mm, 25mm x 10mm, 12mm x 12mm, new non-measurable L."
+Patient-049,week-000,,,Pre-Op,
+Patient-049,week-003,,,Post-Op,PRET
+Patient-049,week-019,x,,SD,"less than 3 months, new target L. 14.5mm x 10mm, T2-Progr."
+Patient-049,week-029,,,PD,"T2-Progr., new non-target L."
+Patient-049,week-046,,,PD,"T2-Progr., non-target L.: 1, target L.: 32mm x 20mm"
+Patient-050,week-000,,,Pre-Op,
+Patient-050,week-001,,,Post-Op,CRET
+Patient-050,week-048,,,PD,"T2-Progr., target L. 26mm x 33mm, 16.5mm x 10mm"
+Patient-050,week-051,,,Post-Op,PRET
+Patient-050,week-061,,,PD,"T2-Progr., new target L. 13mm x 11mm, 20mm x 13mm, 35mm x 34mm, 22mm x 20mm, 14mm x 19mm"
+Patient-051,week-000-1,,,Pre-Op,
+Patient-051,week-000-2,,,Post-Op,CRET
+Patient-051,week-012,,,SD,Non-target L. and T2-Progr. within the irradiated field
+Patient-051,week-023,,,PD,Target L.: 40mm x 24mm
+Patient-051,week-036,,,PD,Target L.: 24mm x 14mm
+Patient-051,week-050,,,PD,Non-Target L.: 1
+Patient-051,week-064,,,PD,Non-Target L.: 1
+Patient-051,week-077,,,PD,New non-Target L. corpus callosum
+Patient-051,week-089,,,PD,Target L.: 15mm x 31mm
+Patient-051,week-103,,,PD,Target L.: 15mm x 55mm
+Patient-052,week-000,,,Pre-Op,
+Patient-052,week-002,,,Post-Op,PRET
+Patient-052,week-089,,,PD,Non-Target L.: 1
+Patient-052,week-115,,,PD,Non-Target L.: 1
+Patient-052,week-119,,,Post-Op,PRET
+Patient-052,week-133,,,PD,Progressing non-Target L.
+Patient-052,week-148,,,PD,New non-Target L.: 1
+Patient-052,week-168,,,PD,Target L.: 20mm x 20mm
+Patient-053,week-000-1,,,Pre-Op,
+Patient-053,week-000-2,,,Post-Op,CRET
+Patient-054,week-000,,,Pre-Op,
+Patient-054,week-002,,,Post-Op,CRET
+Patient-054,week-014,,,SD,New non-target L. within the irradiated area
+Patient-054,week-026,,,PD,TL 10 x 16 mm
+Patient-054,week-028,,,Post-Op,CRET
+Patient-054,week-036,,,SD,None
+Patient-054,week-043,,,PD,One new non-target L.
+Patient-054,week-053,,,PD,One progressing non-Target L.
+Patient-054,week-066,,,PR,None
+Patient-054,week-077,,,PD,Two new target L.: 15mm x 29m and 16mm x 30mm
+Patient-055,week-000-1,,,Pre-Op,
+Patient-055,week-000-3,,,Post-Op,PRET
+Patient-055,week-017,x,,SD,"Less than 3 months, new non-target lesion in high dose field"
+Patient-055,week-039,,,PD,T2-Progr.
+Patient-055,week-054,,,PD,"T2-Progr., Non-target L.: 1"
+Patient-055,week-067,,,PD,"T2-Progr., Non-target L.: 1"
+Patient-055,week-084,,,PD,"Target L.: 1, Non-Target L.: 0, 30mm x 19mm"
+Patient-055,week-099,,x,PD,"Target L.: 1, 22mm x 34mm, non-measurable non-target L."
+Patient-055,week-118,,x,PD,"Target L.: 1, Non-Target L.: 1, 62mm x 54mm, new non-target L."
+Patient-056,week-000-1,,,Pre-Op,
+Patient-056,week-000-2,,,Post-Op,CRET
+Patient-057,week-000-1,,,Pre-Op,
+Patient-057,week-000-2,,,Post-Op,CRET
+Patient-058,week-000,,,Pre-Op,
+Patient-058,week-002,,,Post-Op,PRET
+Patient-058,week-015,,,PD,Target L.: 13mm x 32mm
+Patient-058,week-027,,,PR,
+Patient-058,week-036,,,PR,
+Patient-059,week-000,,,Pre-Op,
+Patient-059,week-001,,,Post-Op,PRET
+Patient-059,week-014,,,PD,Non-Target L.
+Patient-059,week-024,,,PD,Non-Target L.
+Patient-059,week-040,,,PD,Non-Target L.
+Patient-059,week-055,,,PR,None
+Patient-059,week-068,,,PD,New non-target L.
+Patient-059,week-084,,,PD,Target L.: 13mm x 13mm
+Patient-059,week-100,,,PR,None
+Patient-059,week-116,,,PR,None
+Patient-059,week-136,,,PD,New non-Target L.
+Patient-059,week-148,,,PD,Non-Target L.
+Patient-060,week-000,,,Pre-Op,
+Patient-060,week-001,,,Post-Op,CRET
+Patient-060,week-031,,,SD,None
+Patient-060,week-052,,,SD,None
+Patient-060,week-065,,,PD,New non-target L.
+Patient-060,week-069,,,Pre-Op,
+Patient-060,week-070,,,Post-Op,CRET
+Patient-060,week-088,,,PD,Non-Target L.: 1
+Patient-061,week-000-1,,,Pre-Op,
+Patient-061,week-000-2,,,Post-Op,CRET
+Patient-061,week-022,,x,PD,"T2-Progr., new non-measurable L."
+Patient-061,week-027,,x,PD,"T2-Progr., new non-measurable L."
+Patient-061,week-034,,x,PD,"T2-Progr., new non-measurable L."
+Patient-061,week-054,,x,PD,"T2-Progr., Target L.:  23mm x 24mm, non-measurable L. to measurable target L."
+Patient-062,week-000-1,,,Pre-Op,
+Patient-062,week-000-2,,,Post-Op,CRET
+Patient-062,week-015,,,SD,None
+Patient-062,week-030,,,SD,None
+Patient-062,week-042,,,SD,None
+Patient-062,week-050,,,PD,Non-Target L.: 1
+Patient-062,week-057,,,PD,Non-Target L.: 1
+Patient-062,week-064,,,PD,"Target L.: 1, non-target L.: 1"
+Patient-063,week-000,,,Pre-Op,
+Patient-063,week-002,,,Post-Op,CRET
+Patient-063,week-015,,,SD,None
+Patient-063,week-034,,,SD,None
+Patient-063,week-047,,,SD,None
+Patient-063,week-077,,,SD,None
+Patient-063,week-091,,,SD,None
+Patient-063,week-105,,,SD,None
+Patient-063,week-118,,,PD,New non-target L.
+Patient-063,week-130,,,PD,Target L.: 13mm x 13mm
+Patient-063,week-168,,,PD,Target L.: 26mm x 29mm
+Patient-063,week-178,,,PD,Target L.: 29mm x 44mm
+Patient-064,week-000,,,Pre-Op,
+Patient-064,week-002,,,Post-Op,CRET
+Patient-064,week-020,x,,SD,Less than 3 months
+Patient-064,week-033,,,PD,"T2-Progr., new non-target L."
+Patient-064,week-049,,,SD,with Avastin
+Patient-064,week-062,,,PD,"T2-Progr., new non-target L."
+Patient-065,week-000-1,,,Pre-Op,
+Patient-065,week-000-2,,,Post-Op,CRET
+Patient-065,week-014,,,SD,New non-Target L. in the high dose field
+Patient-065,week-021,,,PD,Non-Target L.: 1
+Patient-065,week-025,,,Post-Op,CRET
+Patient-065,week-029,,,PD,Non-Target L.: 1
+Patient-065,week-079,,,PD,"T2-Progr., Target L.: 17mm x 19mm"
+Patient-065,week-102,,,PD,"T2-Progr., Target L.: 25mm x 34mm"
+Patient-066,week-000,,,Pre-Op,
+Patient-066,week-001,,,Post-Op,CRET
+Patient-066,week-016,,,SD,
+Patient-066,week-031,,,PD,T2-Progr.
+Patient-066,week-046,,,PD,Non-Target L.: 1
+Patient-066,week-050,,,Post-Op,CRET
+Patient-066,week-068,,,PD,Non-Target L.: 1
+Patient-066,week-084,,,PD,Target L.: 36mm x 50mm
+Patient-066,week-101,,,PD,Target L.: 12mm x 25mm
+Patient-066,week-128,,,PD,"T2-Progr., target L. 30mm x 72mm"
+Patient-067,week-000-1,,,Pre-Op,
+Patient-067,week-000-2,,,Post-Op,CRET
+Patient-067,week-013,,,PD,"T2-Progr., new target L.: 17mm x 14mm"
+Patient-067,week-019-1,,,PD,Target L.: 29mm x 38mm
+Patient-067,week-019-2,,,Post-Op,PRET
+Patient-067,week-033,,,PD,Non-Target L.
+Patient-067,week-042,,,PD,Non-Target L.
+Patient-067,week-053,,,PD,Non-Target L.
+Patient-067,week-059,,,Post-Op,CRET
+Patient-067,week-068,,,SD,None
+Patient-067,week-073,,,SD,None
+Patient-067,week-077,,,SD,None
+Patient-067,week-079,,,SD,None
+Patient-067,week-092,,,SD,None
+Patient-067,week-109,,,PD,T2-Progr.
+Patient-067,week-124,,,PD,T2-Progr.
+Patient-067,week-136,,,PD,T2-Progr.
+Patient-067,week-152,,,PD,"T2-Progr.,Target L.: 11 x 25 mm"
+Patient-067,week-156,,,PD,Target L.: 30mm x 43mm
+Patient-067,week-157,,,Post-Op,PRET
+Patient-067,week-167,,,PD,Target L.: 25mm x 90mm
+Patient-068,week-000,,,Post-Op,PRET
+Patient-068,week-000-1,,,Pre-Op,
+Patient-068,week-004,,,PD,Non-Target L.: 1 before radiochemotherapy
+Patient-068,week-010,,,PR,None
+Patient-068,week-022,,,PR,None
+Patient-068,week-035,,,PD,"Target L.: 20mm x 23mm, non-target L.: 1"
+Patient-068,week-047,,,PD,"Target L.: 27mm x 44mm, 21mm x 44mm, 27mm x 81mm"
+Patient-069,week-000,,,Pre-Op,
+Patient-069,week-001,,,Post-Op,CRET
+Patient-070,week-000,,,Pre-Op,
+Patient-070,week-004,,,Post-Op,CRET
+Patient-070,week-005,,,SD,None
+Patient-070,week-019,,,SD,None
+Patient-070,week-044,,,PD,"T2-Progr., target L. 12mm x 10mm"
+Patient-070,week-061,,x,PD,"T2-Progr., old target L. 28mm x 22mm, new target L. 45mm x 36mm, 23mm x 20mm, 12mm x 10mm, 10mm x 10mm"
+Patient-071,week-000,,,Pre-Op,
+Patient-071,week-000-2,,,Post-Op,CRET
+Patient-071,week-024,,,PD,Non-Target L.: 1
+Patient-071,week-027,,,PD,Non-Target L.: 1
+Patient-071,week-037,,,PD,"Target L.: new 14mm x 24mm, 13mm x 27mm"
+Patient-071,week-052,,,PD,"Target L.: 14mm x 23mm (static), new 16mm x 26mm"
+Patient-071,week-058,,,PD,"Four target L.: stable 15mm x 24mm, progressing 18mm x 30mm and 16mm x 31mm and 14mm x 30mm"
+Patient-071,week-062,,,PD,Confluent target L. approx. 45mm x 80mm
+Patient-072,week-000-1,,,Pre-Op,
+Patient-072,week-000-2,,,Post-Op,PRET
+Patient-072,week-013,x,x,SD,"Less than 3 months, new target L. 19mm x 12mm, new non-measurable L., T2-Progr."
+Patient-072,week-021,,,PD,"T2-Progr., target L.  26mm x 19mm, new non-target L."
+Patient-072,week-029,,,PD,"T2-Progr., target L. 36.5mm x 18.5mm"
+Patient-072,week-037,,,PR,"Target L. to non-target L. (>50%), T2w stable compared to previous"
+Patient-072,week-046,,,PD,"T2-Progr., target L. to non-target L. (>50%), new non-target L."
+Patient-072,week-055,,,PD,"T2-Progr., new non-target L."
+Patient-072,week-064,,,PD,"T2-Progr., new non-target L."
+Patient-072,week-073,,,PD,"T2-Progr., new target L. 13mm x 11.5mm, new non-target L."
+Patient-072,week-078,,,PD,"T2-Progr., target L.: 14mm x 13mm, new non-target L."
+Patient-072,week-090,,,PD,"T2-Progr., target L. 13mm x 11mm, new non-target L."
+Patient-072,week-105,,,PD,"T2-Progr., target L. 13mm x 11mm, new non-target L."
+Patient-073,week-000,,,Pre-Op,
+Patient-073,week-001,,,Post-Op,CRET
+Patient-073,week-015,,,SD,discrete T2-Progr.
+Patient-073,week-032,,,SD,None
+Patient-073,week-046,,,SD,None
+Patient-073,week-060,,,SD,None
+Patient-073,week-087,,,PD,Non-Target L.: 1
+Patient-073,week-100,,,PD,Target L.: 13mm x 10mm
+Patient-073,week-119,,,PD,"Only non-Target L. remaining, pseudo-progression"
+Patient-073,week-135,,,SD,None
+Patient-073,week-155,,,SD,None
+Patient-073,week-169,,,SD,None
+Patient-073,week-186,,,SD,None
+Patient-073,week-202,,,SD,None
+Patient-073,week-216,,,PD,Target L.: 33mm x 19mm
+Patient-073,week-228,,,PD,Target L.: 40mm x 40mm
+Patient-073,week-242,,,PD,Target L.: 69mm x 62mm
+Patient-074,week-000-1,,,Pre-Op,
+Patient-074,week-000-2,,,Post-Op,PRET
+Patient-074,week-011,x,,SD,Less than 3 months
+Patient-074,week-026,,x,PD,New non-measurable L.
+Patient-074,week-039,,x,PD,"New target L.: 1, 34mm x 14mm, non-measurable L."
+Patient-075,week-000,,,Pre-Op,
+Patient-075,week-002,,,Post-Op,CRET
+Patient-075,week-020,x,,SD,"Less than 3 months, new non-target lesion in high dose field"
+Patient-075,week-032,,x,PD,"T2-Progr., Target L.: 2, 38mm x 31mm, 13mm x 15mm, new non-measurable L."
+Patient-075,week-044,,x,PR,with residual non-measurable non-target L. (PD according to clinic)
+Patient-076,week-000,,,Pre-Op,
+Patient-076,week-001,,,Post-Op,PRET
+Patient-077,week-000,,,Pre-Op,
+Patient-077,week-001,,,Post-Op,PRET
+Patient-077,week-014,,,SD,
+Patient-077,week-026,,,PD,T2-Progr.
+Patient-077,week-048,,x,PD,"PD, new non-measurable L."
+Patient-077,week-062,,,PD,"Target L.: 1, 18mm x 36mm"
+Patient-077,week-070,,,PD,"Target L.: 1, 24mm x 43mm"
+Patient-077,week-083,,,PD,"Target L.: 1, 29mm x 84mm"
+Patient-078,week-000,,,Pre-Op,
+Patient-078,week-001,,,Post-Op,CRET
+Patient-078,week-005,x,,SD,"Less than 3 months, Target L. 14mm x 10.5mm, new non-target L."
+Patient-078,week-019,x,,SD,"Less than 3 months, Target L. 12mm x 19mm, new non-target L., T2 Progr."
+Patient-078,week-029,,,PD,"T2-Progr., Target L.: 1, 16mm x 21mm, Non-Target L.: 2, new T1c non-target L."
+Patient-078,week-037,,,PD,"T2-Progr., Target L.: 2, 16mm x 23mm, 10mm x 10mm (new), Non-Target L.: 2, new non-target L."
+Patient-078,week-039,,,PD,"T2-Progr., Target L. 12mm x 16mm, target L. to non-measurable, Non-Target L.: 3, new non-target L."
+Patient-078,week-041,,,PD,"T2-Progr., Target L.: 12mm x 16mm, Non-Target L.: 4, target L. to non-measurable, new non-target L."
+Patient-078,week-045,,,PD,"T2-Progr., Target L.: 11mm x 17mm, Non-Target L., target L. to non-measurable, new non-target L."
+Patient-078,week-056,,,PD,"T2-Progr., Target L.:  11mm x 17mm, Non-Target L., target lesion to non-measurable L."
+Patient-078,week-062,,,PD,"T2-Progr., Target L.: 11mm x 17mm, Non-Target L.:, target L. to non-measurable L., new non-target L."
+Patient-078,week-076,,x,PD,"T2-Progr., Target L.: 11mm x 17mm, Non-Target L., target L. to non-measurable L."
+Patient-078,week-088,,x,PD,"T2-Progr., Target L. 11mm x 17mm, Non-Target L., target L. to non-measurable L."
+Patient-078,week-106,,,PR,60% SPD reduction to the maximum measured on 20110720 
+Patient-078,week-113,,,PD,"Target L.: 15.5mm x 13mm, non-measurable L. to target L., 25% increase in SPD "
+Patient-078,week-116,,,PD,Target L.: 20mm x 16mm
+Patient-078,week-119,,,PD,"T2-Progr., Target L. 31mm x 19mm"
+Patient-079,week-000,,,Pre-Op,
+Patient-079,week-014,,,PD,Non-Target L. outside of irradiation field
+Patient-079,week-053,,,Post-Op,CRET
+Patient-080,week-000,,,Pre-Op,
+Patient-080,week-001,,,Post-Op,CRET
+Patient-080,week-018,x,,SD,"Less than 3 months, new target L. 11mm x 11mm, new non-target L."
+Patient-081,week-000-1,,,Pre-Op,
+Patient-081,week-000-2,,,Post-Op,CRET
+Patient-081,week-006,,,PD,Non-Target L.: 1
+Patient-082,week-000-1,,,Pre-Op,
+Patient-082,week-000-2,,,Post-Op,CRET
+Patient-082,week-003,,,SD,Not a timepoint for RANO measurement! Circular enhancement around the resection cavity
+Patient-082,week-042,,,PD,New target L.: 22mm x 40 mm
+Patient-083,week-000,,,Pre-Op,
+Patient-083,week-002,,,Post-Op ,CRET
+Patient-083,week-022,,,None,"No contrast-agent, maybe SD"
+Patient-084,week-000-1,,,Pre-Op,
+Patient-084,week-000-2,,,Post-Op,CRET
+Patient-084,week-012,x,,SD,"less than 3 months, new target L. 15.5mm x 10mm, 17mm x 29.5mm, new non-target L."
+Patient-085,week-000-1,,,Pre-Op,
+Patient-085,week-000-2,,,Post-Op,PRET
+Patient-085,week-001,,,Post-Op,PRET
+Patient-085,week-018,,x,PD,Non-measurable L.
+Patient-085,week-042,,,PD,"Target L.: 1, 42mm x 34mm"
+Patient-085,week-050,,,PD,"Target L.: 1,  50mm x 42mm"
+Patient-086,week-000,,,Pre-Op,
+Patient-086,week-001,,,Post-Op,CRET
+Patient-086,week-173-1,,,PD,"T2-Progr., Target L.: 1, 76mm x 52mm"
+Patient-086,week-173-2,,,Post-Op,PRET
+Patient-086,week-181,,,PD,"T2-Progr., Target L.: 1, 34mm x 21mm, new non-target L."
+Patient-087,week-000-1,,,Pre-Op,
+Patient-087,week-000-2,,,Post-Op,CRET
+Patient-087,week-024,,,PD,Non-Target L.: 1
+Patient-087,week-039,,,PD,Non-Target L.: 15mm x 17mm
+Patient-088,week-000-1,,,Pre-Op,
+Patient-088,week-000-2,,,Post-Op,PRET
+Patient-089,week-000-1,,,Pre-Op,
+Patient-089,week-000-2,,,Post-Op,CRET
+Patient-089,week-013,,,SD,None
+Patient-089,week-026,,,SD,None
+Patient-089,week-039,,,PD,New non-Target L.: 1
+Patient-089,week-045,,,PD,Target L.: 19mm x 24mm
+Patient-089,week-046,,,Post-Op/PD,"PRET, non-Target L."
+Patient-089,week-056,,,PD,New target L.: 14mm x 18mm
+Patient-089,week-064,,,PD,Target L.: 15mm x 24mm
+Patient-090,week-000-1,,,Pre-Op,
+Patient-090,week-000-2,,,Post-Op,CRET
+Patient-090,week-029,,,PD,T2-Progr.
+Patient-091,week-000,,,Pre-Op,
+Patient-091,week-001,,,Post-Op ,PRET
+Patient-091,week-014,,x,PD,Non-measurable L.
+Patient-091,week-026,,x,PD,Non-measurable L.
+Patient-091,week-036,,x,PD,Non-measurable L.
+Patient-091,week-043,,x,PD,Non-measurable L.

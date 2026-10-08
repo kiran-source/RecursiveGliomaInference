@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid GridType="Collection" CollectionType="Temporal" Name="state">
+      <Grid Name="state_0" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="2.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_0/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_0/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_0/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_0/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_1" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_1/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_1/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="3.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_1/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_1/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_1/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_1/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_2" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_2/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_2/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="4.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_2/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_2/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_2/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_2/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_3" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_3/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_3/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="5.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_3/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_3/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_3/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_3/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_4" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_4/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_4/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="6.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_4/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_4/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_4/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_4/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_5" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_5/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_5/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="7.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_5/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_5/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_5/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_5/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_6" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_6/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_6/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="8.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_6/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_6/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_6/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_6/cells</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="state_7" GridType="Uniform">
+        <Topology NumberOfElements="27632" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="27632 3" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_7/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="14003 2" Format="HDF">state_trajectory.h5:state/state_7/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="9.000000" />
+        <Attribute ItemType="FiniteElementFunction" ElementFamily="CG" ElementDegree="2" ElementCell="triangle" Name="state" Center="Other" AttributeType="Scalar">
+          <DataItem Dimensions="165792 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_7/cell_dofs</DataItem>
+          <DataItem Dimensions="55637 1" NumberType="Float" Format="HDF">state_trajectory.h5:state/state_7/vector</DataItem>
+          <DataItem Dimensions="27633 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_7/x_cell_dofs</DataItem>
+          <DataItem Dimensions="27632 1" NumberType="UInt" Format="HDF">state_trajectory.h5:state/state_7/cells</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

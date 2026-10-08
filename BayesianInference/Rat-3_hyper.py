@@ -16,7 +16,9 @@ import argparse
 
 sep = "\n"+"#"*80+"\n"
 # hippylib setup
-sys.path.append('../hippylib/hippylib')
+for p in ['../hippylib', '../hippylib/hippylib', '../../hippylib', 'hippylib', '/workspace/hippylib']:
+    if os.path.exists(p) and p not in sys.path:
+        sys.path.append(p)
 from hippylib import BiLaplacianPrior
 from hippylib import *
 sys.path.append('..')
@@ -46,11 +48,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--sigma', default=0.035, type=float)
 parser.add_argument('--rhoGM', default=800, type=float)
 parser.add_argument('--nsamples', default=500, type=int)
+parser.add_argument('--max_iter', default=200, type=int)
 args = parser.parse_args()
 
 # Load Mesh
 name = "W05_0"
-data_dir = "../mri_data/W05_data/2D/"
+data_dir = None
+for candidate in ["../mri_data/W05_data/2D/", "../W05_data/2D/", "W05_data/2D/", "./W05_data/2D/", "/workspace/W05_data/2D/"]:
+    if os.path.exists(candidate):
+        data_dir = candidate
+        break
+if data_dir is None:
+    data_dir = "../mri_data/W05_data/2D/"
 mesh = dl.Mesh(data_dir + name + ".xml")
 dx = dl.Measure("dx", domain=mesh)
 
@@ -137,7 +146,12 @@ assigner.assign(mean, [mean_0, mean_1, mean_2])
 prior.mean.axpy(1.0, mean.vector())
 
 #------------------------ Initial Condition -------------------------
-u0 = interp(data_dir + "tumor_t0.mat", "cells_t", Vh[STATE])
+t0_mat = os.path.join(data_dir, "tumor_t0.mat")
+if os.path.exists(t0_mat):
+    u0 = interp(t0_mat, "cells_t", Vh[STATE])
+else:
+    u0 = dl.Function(Vh[STATE])
+    u0.assign(data[str(tlist[0])])
 
 #----------------------- PDE Model Setup ------------------------
 dt = 1.0
@@ -184,7 +198,7 @@ params = ReducedSpaceNewtonCG_ParameterList()
 
 params["rel_tolerance"] = 1e-6
 params["abs_tolerance"] = 1e-10
-params["max_iter"] = 200
+params["max_iter"] = args.max_iter
 params["globalization"] = "LS"
 params["print_level"] = 0
 params["GN_iter"] = 10
